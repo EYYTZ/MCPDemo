@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "advanced-mcp-server": {
+      "type": "stdio",
+      "command": "C:\\Users\\VS833SJ\\Documents\\microservices\\MCPDemo\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\VS833SJ\\Documents\\microservices\\MCPDemo\\server.py"
+      ],
+      "cwd": "C:\\Users\\VS833SJ\\Documents\\microservices\\MCPDemo",
+      "trust": false
+    }
+  }
+}

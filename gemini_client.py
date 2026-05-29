@@ -1,12 +1,14 @@
 import asyncio
+import os
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
 # 1. 定義要如何啟動 MCP Server (這就是 Client "讀取" Server 的方式)
 # 它相當於在背景執行指令: python c:\...\server.py
+server_script_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "server.py")
 server_params = StdioServerParameters(
     command="python",
-    args=["c:\\Users\\VS833SJ\\Documents\\microservices\\MCPDemo\\server.py"]
+    args=[server_script_path]
 )
 
 async def run_gemini_client():
